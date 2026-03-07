@@ -37,4 +37,4 @@ saveToDb("ApnaCollege", ()=>{
     })
 }, ()=>{
     console.log("Weak connection, Try later");
-});
+})
