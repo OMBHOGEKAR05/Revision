@@ -64,19 +64,27 @@ function changecolor(color){
     })
 }
 
-changecolor("Red")
-.then((color)=>{
-    console.log("Colour changed to ,",color);
-    return changecolor("blue")
-})
-.then((color)=>{
-    console.log("Colour changed to ,",color);
-    return changecolor("Orange")
-})
-.then((color)=>{
-    console.log("Colour changed to ,",color);
-})
-.catch(()=>{
-    console.log("Colours are finished!");
-})
+// changecolor("Red")
+// .then((color)=>{
+//     console.log("Colour changed to ,",color);
+//     return changecolor("blue")
+// })
+// .then((color)=>{
+//     console.log("Colour changed to ,",color);
+//     return changecolor("Orange")
+// })
+// .then((color)=>{
+//     console.log("Colour changed to ,",color);
+// })
+// .catch(()=>{
+//     console.log("Colours are finished!");
+// })
 
+//Using async/await
+
+async function colors() {
+    await changecolor("red");
+    await changecolor("blue");
+    await changecolor("orange");
+    changecolor("Purple");
+}
