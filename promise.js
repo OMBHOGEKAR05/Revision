@@ -58,7 +58,13 @@ let h1 = document.querySelector("h1");
 function changecolor(color){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
+            let int = Math.floor(Math.random() * 10) + 1;
+            if(int > 3){
+                reject();
+                console.log("Promise rejected");
+            }
             h1.style.color = color;
+            console.log("Changed color to :", color);
             resolve(color);
         },1000)
     })
@@ -83,8 +89,14 @@ function changecolor(color){
 //Using async/await
 
 async function colors() {
+    try{
     await changecolor("red");
     await changecolor("blue");
     await changecolor("orange");
-    changecolor("Purple");
+    await changecolor("Purple");
+    }
+    catch(err){
+        console.log(err);
+        console.log("Weak connection");
+    }
 }
