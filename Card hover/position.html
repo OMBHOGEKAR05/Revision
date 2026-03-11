@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border: 2px solid black;
+            text-align: center;
+            margin: 20px;
+            display: inline-block;
+            color: red;
+        }
+
+        #static {
+            background-color: yellow;
+            position: static;
+        }
+
+        #relative {
+            background-color: yellow;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        #absolute {
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        #fixed {
+            background-color: yellow;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Static Demo</h2>
+        <div></div>
+        <div id="static">static</div>
+    </section>
+    <section>
+        <h2>Relative Demo</h2>
+        <div></div>
+        <div id="relative">relative</div>
+    </section>
+    <section>
+        <h2>Absolute Demo</h2>
+        <div></div>
+        <div id="absolute">absolute</div>
+    </section>
+    <section>
+        <h2>Fixed Demo</h2>
+        <div></div>
+        <div id="fixed">fixed</div>
+    </section>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eligendi dolorum provident assumenda soluta accusantium necessitatibus, cumque explicabo tenetur sequi nemo ullam voluptatum veritatis mollitia impedit qui consequatur suscipit vero ex? Perferendis velit at quasi neque, ipsam sunt praesentium dolor commodi illum, perspiciatis quisquam nobis accusamus? Amet pariatur earum quod, quibusdam rerum possimus molestias consequatur itaque accusantium quidem molestiae eaque sit dolorem excepturi fugit. Dolorum aspernatur odit debitis natus hic.
+    </p>
+</body>
+</html>
