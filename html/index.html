@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age" checked><!--By default checked checkbox-->
+        <label for="age">I am 18+</label>
+        <div>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" id="banana" name="fruit" value="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" id="mango" name="fruit" value="mango">
+            <label for="mango">Mango</label>
+            <input type="radio" id="pineapple" name="fruit" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+        </div>
+        <button>submit</button>
+
+        <div>
+
+            <h4>Select the language : </h4>
+            <select name="lang" id="lang">
+                <option value="java">Java</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="vol">Volume</label>
+            <input type="range" name="vol" id="vol" min="0" max="100">
+        </div>
+
+        <div>
+            <h2>Message</h2>
+            <textarea name="feedback"></textarea>
+        </div>
+    </form>
+</body>
+</html>
